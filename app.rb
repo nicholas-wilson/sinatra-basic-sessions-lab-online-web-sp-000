@@ -9,5 +9,6 @@ class App < Sinatra::Base
   post '/checkout' do
     raise params.inspect
     @item = params
+    erb :item
   end
 end
