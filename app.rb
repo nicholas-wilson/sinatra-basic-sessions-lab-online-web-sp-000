@@ -13,7 +13,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
     raise params.inspect
-    session[:item] = params
+    session[:item] = params[:item]
     @session = session
     erb :item
   end
