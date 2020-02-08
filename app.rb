@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
+    raise params.inspect
     # @item = params[]
   end
 end
